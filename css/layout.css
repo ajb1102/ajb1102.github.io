@@ -326,7 +326,7 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .solidworks {
-  	width: 91%;
+  	width: 90%;
   	-moz-animation: photoshop 2s ease;
   	-webkit-animation: photoshop 2s ease;
 }
@@ -351,59 +351,59 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: html5 2s ease;
 }
 .gdt {
-  	width: 80%;
+  	width: 60%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
 
-@-moz-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes css {
+@-moz-keyframes solidworks {
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
-@-moz-keyframes html5 {
+@-moz-keyframes creo {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 90%;  }
 }
-@-moz-keyframes jquery {
+@-moz-keyframes excel {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 95%;  }
+}
+@-moz-keyframes ansys {
+  0%   { width: 0px;  }
+  100% { width: 20%;  }
+}
+@-moz-keyframes matlab {
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+@-moz-keyframes gdt {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
 }
 
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes css {
+@-webkit-keyframes solidworks {
   0%   { width: 0px;  }
   100% { width: 90%;  }
 }
-@-webkit-keyframes html5 {
+@-webkit-keyframes creo {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 90%;  }
 }
-@-webkit-keyframes jquery {
+@-webkit-keyframes excel {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 95%;  }
+}
+@-webkit-keyframes ansys {
+  0%   { width: 0px;  }
+  100% { width: 20%;  }
+}
+@-webkit-keyframes matlab {
+  0%   { width: 0px;  }
+  100% { width: 55%;  }
+}
+@-webkit-keyframes gdt {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
 }
 
 /* ------------------------------------------------------------------ */
