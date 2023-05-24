@@ -1,6 +1,7 @@
 const images = Array.from(document.querySelectorAll("#slideshow-container img"));
 let currentImageIndex = 0;
 let isPaused = false;
+let isBlurActive = false;
 
 // Randomize the order of images
 shuffleArray(images);
@@ -44,6 +45,10 @@ function togglePlayPause() {
 }
 
 function showImageAtIndex(index) {
+    if (isBlurActive) {
+        removeBlur(); // Remove previous blur effect if active
+    }
+
     images.forEach((image, i) => {
         if (i === index) {
             image.style.display = "block";
@@ -76,4 +81,29 @@ function shuffleArray(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
+}
+
+// Function to apply blur effect to the specified element
+function applyBlur(element) {
+    element.style.filter = "blur(5px)";
+}
+
+// Function to remove blur effect from the specified element
+function removeBlur(element) {
+    element.style.filter = "none";
+}
+
+// Add event listener to the button
+const blurButton = document.getElementById("blur-button");
+blurButton.addEventListener("click", handleBlurButtonClick);
+
+function handleBlurButtonClick() {
+    isBlurActive = true;
+    const blurredElements = Array.from(document.querySelectorAll("#slideshow-container, body"));
+    blurredElements.forEach(element => applyBlur(element));
+
+    setTimeout(() => {
+        blurredElements.forEach(element => removeBlur(element));
+        isBlurActive = false;
+    }, 1000); // Blur duration (in milliseconds)
 }
